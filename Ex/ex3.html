@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>색 입력 받기</title>
+</head>
+<body>
+    <h3>컬러다이얼로그로 색 입력</h3>
+    <hr>
+    <form>
+        색 선택
+        <input type="color" value="#00BFFF"
+        onchange="document.body.style.color=this.value">
+    </form>
+    <hr>
+    <pre>
+month: <input type="month" value="2022-09"><br>
+week: <input type="week" value="2022-W14"><br>
+date: <input type="date" value="2022-10-04"><br>
+time: <input type="time" value="14:20"><br>
+local: <input type="datetime-local" value="2022-10-04T14:20:00">
+    </pre>
+    <hr>
+    <form>
+        email: <input type="email" placeholder="id@host"><br>
+        홈페이지: <input type="url" placeholder="http://"><br>
+        전화번호: <input type="tel" placeholder="010-1234-5678"><br>
+        <input type="submit" value="확인"><br><br>
+        <hr>
+        검색어: <input type="search" placeholder="검색어">
+        <input type="button" value="검색">
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>회원정보</legend>
+            이메일: <input type="email" id="email"><br>
+            홈페이지: <input type="url" id="url"><br>
+            전화번호: <input type="tel"><br>
+        </fieldset>
+        <small>질문: Tel.010-111-1111</small>
+    </form>
+</body>
+</html>

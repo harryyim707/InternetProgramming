@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>데이터 목록을 가진 텍스트 입력</title>
+</head>
+<body>
+    <h3>가보고 싶은 곳</h3>
+    <hr>
+    <form>
+        하고 싶은 직업: <input type="text" list="job"><br>
+        <datalist id="job">
+            <option value="웹디자인"></option>
+            <option value="여행전문가"></option>
+            <option value="동화작가"></option>
+            <option value="동화작가"></option>
+            <option value="수영코치"></option>
+        </datalist>
+        키우고 싶은 동식물: <input type="text" list="anim"><br>
+        <datalist id="anim">
+            <option value="슈나우저"></option>
+            <option value="비숑"></option>
+            <option value="진돗개"></option>
+            <option value="웰시코기"></option>
+        </datalist>
+        <hr>
+        검색: <input type="text" size="10" value="">
+        <input type="button" value="Q1">
+        <button type="button">Q2</button><br>
+        submit 버튼: <input type="submit" value="전송1">
+        <button type="submit">전송2</button><br>
+        <button type="submit">*전송3*</button><br>
+        reset 버튼: <input type="reset" value="리셋1">
+        <button type="reset">리셋2</button><br>
+    </form>
+</body>
+</html>

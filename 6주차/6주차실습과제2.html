@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>6주차실습과제2</title>
+    <style>
+        @import url(./problem3.css);
+    </style>
+</head>
+<body>
+    <h1>과일배송 주문서</h1>
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li><label for="name">이름 <input type="text" placeholder="여백없이 입력" id="name"></label></li>
+                <li><label for="contacts">연락처 <input type="tel" placeholder="연락가능한 번호" id="contacts"></label></li>
+            </ul>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li><label for="address">주소 <input type="text" id="address"></label></li>
+                <li><label for="telnum">전화번호 <input type="tel" id="telnum"></label></li>
+                <li><label for="reqs">요청사항 <textarea name="requirements" id="reqs" cols="40" rows="3"></textarea></label></li>
+            </ul>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <ul>
+                <li><label for="apple"><input type="checkbox" id="apple">사과 <input type="number" min="0" max="8" value="0">개</label></li>
+                <li><label for="pineapple"><input type="checkbox" id="pineapple">파인애플 <input type="number" min="0" max="10" value="0">개</label></li>
+                <li><label for="strawberry"><input type="checkbox" id="strawberry">딸기 <input type="number" min="0" max="20" value="0">개</label></li>
+            </ul>
+        </fieldset>
+    </form>
+    <label for="sub"><input type="submit" id="sub" value="주문하기"></label>
+    <label for="re"><input type="reset" id="re" value="다시 작성"></label>
+</body>
+</html>

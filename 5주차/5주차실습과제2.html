@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>문제 2</title>
+</head>
+<body>
+    <header>
+        <h2>자기소개 페이지(with. 시맨틱 태그)</h2>
+        <div class="introduction">
+            <div id="about">
+                안녕하세요. 정보통신공학전공 2018112165 임현준입니다. <br>
+                자기소개 페이지를 통해 제 자신을 소개합니다!
+            </div>
+            <div id="pic">
+                <figure>
+                    <img src="./prg.png" alt="programmer" width="300" height="300"><br>
+                    <figcaption>임현준</figcaption>
+                </figure>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <h2>목차</h2>
+        <ul class="list">
+            <li><a href="#major">전공소개</a></li>
+            <li><a href="#techniques">보유기술</a></li>
+            <li><a href="#timetable">오늘의 시간표</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>내용</h2>
+        <article id="major">
+            <details>
+                <summary>전공 소개</summary>
+                <p>
+                    제 전공은 정보통신공학(ICE) 입니다.
+                    대학에서, 정보통신 공학을 전공으로 연구하는 과학이며,
+                    컴퓨터를 구성하는 하드웨어 및 소프트웨어에 대한 지식 뿐만아니라 네트워크의 구성 및 전반에 대한 지식을 습득하고
+                    설계 및 개발 능력을 기릅니다.
+                </p>
+            </details>
+        </article>
+        <article id="techniques">
+            <details>
+                <summary id="techniques">보유기술</summary>
+                <p>
+                    인터넷 프로그래밍 <meter value="0.4" max="1.0"></meter><br>
+                    c언어 <meter value="90" max="100"></meter><br>
+                    영어회화 <meter value="90" max="100"></meter><br>
+                    목표 기술 성취도 <progress value="50" max="100"></progress>
+                </p>
+            </details>
+        </article>
+        <article id="timetable">
+            <details>
+                <summary>오늘의 시간표</summary>
+                <h4><mark>2022.09.30 시간표</mark></h4><br>
+                <p>
+                    기상 <time>11:00</time><br>
+                    인터넷프로그래밍 수강 <time>14:00 </time><br>
+                    OPIc 공부 <time>17:00</time> <br>
+                    헬스 <time>20:00</time><br>
+                </p>
+            </details>
+        </article>
+    </section>
+    <aside>
+        <h2>노트</h2>
+        인터넷 프로그래밍 강의를 수강하며 최종적으로 "포트폴리오 사이트 제작"이라는 나만의 홈페이지를 만들고 싶습니다.
+    </aside>
+    <footer>
+        <p>&copy;2022년 09월 30일, [2018112165 임현준]</p>
+    </footer>
+</body>
+</html>

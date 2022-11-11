@@ -1,0 +1,43 @@
+body{
+    background-color: aliceblue;
+}
+h1{
+    color: brown;
+    text-align: center;
+}
+header{
+    border-bottom: 1px solid;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 휴먼편지체;
+    font-size: 1em;
+    text-indent: 1em;
+}
+h2{
+    color: blue;
+    text-shadow: 2px 2px 5px skyblue;
+}
+ul{
+    border: 1px dotted;
+    padding-inline-start: 30px;
+}
+#android > a, #iphone > a{
+    background-color: yellow;
+}
+footer{
+    border-radius: 10px;
+    background-color: orange;
+}
+/* survey style */
+form{
+    background-color: rgba(255, 0, 0, 0.2);
+}
+span{
+    font-family: Gulim;
+    font-size: 1.5em;
+    color: blue;
+    font-weight: bold;
+}

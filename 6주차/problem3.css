@@ -1,0 +1,15 @@
+body{
+    background-color: wheat;
+}
+ul{
+    list-style-type: none;
+}
+fieldset{
+    margin: 15px 10px;
+}
+legend{
+    font-weight: bold; font-size: 18px; color: purple;
+}
+li{
+    margin-bottom: 10px;
+}

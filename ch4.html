@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Ch 4</title>
+    <style>
+        .text>div{
+            font: normal 24px verdana;
+        }
+        .droppedText{
+            text-shadow: 3px 3px;
+        }
+        .redText{
+            text-shadow: 3px 3px red;
+        }
+        .blurredText{
+            text-shadow: 3px 3px 5px skyblue;
+        }
+        .glowedText{
+            text-shadow: 0 0 3px red;
+        }
+        .wordArtEffect{
+            color: white;
+            text-shadow: 0 0 3px darkblue;
+        }
+        .threeDEffect{
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+        .text>.multiEffect{
+            color: yellow;
+            text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+        .box>div{
+            width: 150px;
+            height: 70px;
+            padding: 10px;
+            border: 10px solid lightgray;
+            background-image: url("./7주차/hgd.jpg");
+            background-size: 150px 100px;
+            background-repeat: no-repeat;
+        }
+        .redBox{
+            box-shadow: 10px 10px red;
+        }
+        .blurredBox{
+            box-shadow: 10px 10px 5px skyblue;
+        }
+        .box>.multiEffect{
+            box-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>텍스트 그림자 만들기</h1>
+        <hr>
+        <div class="droppedText">Dropped Shadow</div>
+        <div class="redText">Colored Shadow</div>
+        <div class="blurredText">Blurred Shadow</div>
+        <div class="glowedText">Glowed Shadow</div>
+        <div class="wordArtEffect">WordArt Effect</div>
+        <div class="threeDEffect">3D Effect</div>
+        <div class="multiEffect">Multiple Shadow Effect</div>
+    </div>
+    
+    <div class="box">
+        <h1>박스 그림자 만들기</h1>
+        <hr>
+        <div class="redBox"></div><br>
+        <div class="blurredBox"></div><br>
+        <div class="multiEffect"></div><br>
+    </div>
+</body>
+</html>

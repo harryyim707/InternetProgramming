@@ -1,0 +1,136 @@
+<!DOCTYPE html> <!-- HTML5 문서임을 알리는 지시어 -->
+<html lang="ko">
+<head> <!-- title, script, style, meta 정의 -->
+    <meta charset="UTF-8"><!-- 다양한 메타 데이터 표현; name, content 속성을 사용하여 저자, 내용설명, 키워드 등을 지정 가능; charset 속성으로 웹 페이지에 사용하는 문자 코드 지정 -->
+    <!-- 메타데이터: 데이터를 설명하는 데이터 -->
+    <!-- <base href="">: 기본 폴더 혹은 서버 설정, 웹 페이지들의 기본 URL과 페이지가 출력될 윈도우 지정 -->
+    <!-- <link href="">: 외부 파일 링크 -->
+    <!-- <script>: 자바 스크립트 -->
+    <!-- <style>: css 스타일 -->
+    <title>Ch2 Summary</title> <!-- 페이지 제목 -->
+</head>
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 문서 페이지에 실질적으로 보여지는 부분 -->
+    <h1 title="텍스트 위에 마우스를 올리면 툴팁이 출력됨">h1 tag</h1> <!-- 문단 제목 태그 1~6까지 존재 -->
+    <p>
+        단락을 의미하는 태그, 자동으로 단락 간 구분을 해 준다.
+        <br> <!-- <br>은 break line의 의미로, 줄바꿈을 해 준다. -->
+        몇몇 문자들은 엔터티로 표기를 해 주어야 함.
+        &quot; &apos; &lt; &gt; &amp; &nbsp; &pound; &radic; &infin; &uarr; &divide; &sum;
+        <!-- 순서대로: ", ', <, >, &, space, 파운드, 루트, 무한대 표시, 위 방향, 나누기 표시, 시그마 표시 -->
+        <!-- 엔터티는 &엔터티; 의 방식으로 표기한다. -->
+    </p>
+    <pre>
+현재 개발자 화면에 표시되는 그대로 표시가 된다.
+        tab키를 눌러 띄어쓰기 한 것도 그대로 표시됨.
+    </pre>
+    <hr> <!-- horizontal의 의미로, 수직선을 그려준다. -->
+    <p>
+        <b>진하게, bold체</b>
+        <strong>중요한, b와 다른 것은 없음</strong>
+        <em>강조, 위의 두 개와 다르지 않음</em>
+        <i>italic체</i>
+        <b><i>이탤릭 볼드 체</i></b>
+        보통 문자 <small>한 단계 작은 문자</small>
+        <del>취소선</del>
+        <ins>밑줄</ins>
+        보통문자의 <sup>윗첨자</sup>
+        보통문자의 <sub>아래첨자</sub>
+        <mark>하이라이팅</mark>
+    </p>
+    <!-- 블록 태그: 항상 새 라인에서 시작하여 출력, 양 옆에 다른 콘텐트를 배치하지 않고 한 라인 독점 사용
+        e.g.) <p> <h1> <div> <ul> <ol> 등 -->
+    <!-- 인라인 태그: 블록 속에 삽입되어 블록의 일부로 출력
+        e.g.) <strong> <a> <img> <span> 등 -->
+    <img src="./Ex/images/login.gif" alt="image" width="80" height="100"> 
+    <!-- src: 이미지 파일의 URL, alt: 이미지를 출력할 수 없을 때 출력되는 문자열, width: 이미지의 너비, height: 이미지의 높이 -->
+    <ol type="A">
+        <!-- 순서 있는 리스트, 기본 타입은 1, 타입은 순서대로 숫자, 대문자, 소문자, 로마 숫자 대문자, 로마 숫자 소문자 이다. start 속성은 시작 값이며, 숫자에 대해서만 적용 -->
+        <li></li> <!-- 리스트의 아이템 -->
+        <li></li> <!-- 리스트 아이템 각각에도 type을 다르게 적용 가능 -->
+    </ol>
+    <ul> 
+        <!-- 순서 없는 리스트, 기본 타입은 disc, circle은 속이 빈 원, square는 검은 색 네모 -->
+        <li></li>
+        <li> <!-- ul에서만 종료 태그 생략 가능 -->
+    </ul>
+    <dl>
+        <!-- 정의 리스트 -->
+        <dt></dt>
+        <!-- 용어 -->
+        <dd></dd>
+        <!-- 설명 -->
+    </dl>
+    <table>
+        <!-- 표를 만드는 태그, 표 전체를 담는 컨테이너이다. -->
+        <caption>표 제목</caption>
+        <thead> 
+            <!-- 표에서 헤더 부분에 대한 그룹 -->
+            <tr>
+                <!-- table row, 테이블의 행, 즉 가로로 가로지른다. 여러 td, th들을 왼쪽부터 오른쪽으로 순서대로 배치 -->
+                <th>name</th> <!-- 열 제목 -->
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 데이터 셀 그룹 -->
+            <tr>
+                <td>황기태</td> <!-- 데이터 셀 -->
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>이재문</td>
+                <td>95</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>이병은</td>
+                <td>40</td>
+                <td>61</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- 표의 푸터 부분 -->
+            <tr>
+               <td>합</td>
+               <td>225</td>
+               <td>230</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table border="1"> <!-- 테이블의 경계선 지정 -->
+        <tr>
+            <td>1</td>
+            <td colspan="3">2</td> <!-- 오른쪽으로 셀 합치기 -->
+            <td rowspan="2">3</td> <!-- 아래쪽으로 셀 합치기 -->
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td colspan="2">10</td>
+        </tr>
+    </table>
+    <a href="./Ex/ex.html" target="_blank" download="">하이퍼 링크 태그</a> 
+    <!-- href: 하이퍼 링크 주소를 넣어준다. target: _blank는 새 탭으로, _self는 현재 페이지에, _top은 최상위 창에, _parent는 부모 창에 출력해 준다. download속성을 써주면 다운로드가 가능하다. -->
+    <ul>
+        <li><a href="#1">1장 앵커</a></li> <!-- href에 태그의 id를 넣어주면 앵커 기능으로 사용할 수 있다. -->
+    </ul>
+    <h3 id="1">1장 앵커</h3>
+    <iframe src="./Ex/ex.html" name="frame1" frameborder="0" width="200" height="200"></iframe>
+    <!-- src: URL주소, srcdoc: 직접 HTML 태그로 작성된 텍스트로서 출력될 내용, src보다 우선순위를 가진다, name: 이름, 다른 웹 페이지에서 target 속성값으로 사용  -->
+    <!-- target 속성: <base> <a> <area> <form>태그에서 HTML 페이지를 출력할 윈도우를 지정; _blank, _self, _parent, _top, 윈도우 이름 등을 지정가능하다. -->
+    <a href="./2.html" target="frame1"></a> <!-- frame1이라는 타깃에 해당 하이퍼링크 내용을 출력한다. -->
+    <audio src="./4주차/media/Korean national anthem.mp3" controls loop></audio>
+    <!-- controls: 컨트롤 바 출력, autoplay: 자동 재생 그러나 저작권 때문에 지원하지 않음,loop: 반복 재생 -->
+    <video src="./harryyim/media/bear.mp4" controls></video>
+    <!-- controls: 컨트롤 바 출력, autoplay: 자동 재생 그러나 저작권 때문에 지원하지 않음, loop: 반복 재생, muted: 오디오는 뮤트 상태로 재생 -->
+</body>
+</html>

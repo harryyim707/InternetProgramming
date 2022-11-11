@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container{
+            width: 520px;
+            border: 10px solid black;
+            padding: 20px 40px;
+            background-color: cadetblue;
+        }
+        legend{
+            font-weight: bold;
+        }
+        fieldset{
+            margin-bottom: 10px;
+        }
+        .personal-info>#info{
+            list-style: none;
+            background-color: bisque;
+            line-height: 30px;
+        }
+        .appliance>#field{
+            background-color: aquamarine;
+            line-height: 30px;
+        }
+    </style>
+    <title>8주차실습과제3</title>
+</head>
+<body>
+    <div class="container">
+        <h1>프론트엔드 개발자 지원서</h1>
+        HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.
+        <hr>
+        <form>
+            <label>
+                <fieldset class="personal-info">
+                    <legend>개인정보</legend>
+                    <ul id="info">
+                        <li>
+                            <label>이름 <input type="text" name="namefield" id="namefield" placeholder="공백없이 입력하세요"></label>
+                        </li>
+                        <li>
+                            <label>연락처 <input type="tel" name="phonenu" id="phonenu"></label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </label>
+            <label>
+                <fieldset class="appliance">
+                    <legend>지원 분야</legend>
+                    <ul id="field">
+                        <li>
+                            <label for="wp"><input type="radio" name="field-opt" id="wp">웹 퍼블리싱</label>
+                        </li>
+                        <li>
+                            <label for="wad"><input type="radio" name="field-opt" id="wad">웹 애플리케이션 개발</label>
+                        </li>
+                        <li>
+                            <label for="dei"><input type="radio" name="field-opt" id="dei">개발 환경 개선</label>
+                        </li>
+                    </ul>
+                    <label>
+                        <fieldset id="appliance-reason">
+                            <legend>지원 동기</legend>
+                            <textarea name="reason" id="reason" cols="50" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+                        </fieldset>
+                    </label>
+                </fieldset>
+            </label>
+            <button type="submit">접수하기</button>
+            <button type="reset">다시 쓰기</button>
+        </form>
+    </div>
+</body>
+</html>

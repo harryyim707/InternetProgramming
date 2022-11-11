@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>10주차문제1</title>
+    <style>
+        #spring, #summer, #autumn, #winter{
+            display: inline-block;
+        }
+        .container #box{
+            width: 200px;
+            height: 100px;
+            border: 2px solid green;
+            line-height: 100px;
+            text-align: center;
+            font-size: 30px;
+        }
+        img{
+            position: absolute;
+            width: 150px;
+            height: 100px;
+        }
+        #spring>#sp1{
+            z-index: 0;
+            left: 9px;
+            top: 175px;
+        }        
+        #spring>#sp2{
+            z-index: 1;
+            left: 34px;
+            top: 225px;
+        } 
+        /* 25차이 */
+        #spring>#sp3{
+            z-index: 2;
+            left: 60px;
+            top: 275px;
+        }
+        /* 51차이 */
+        #summer>#su1{
+            z-index: 0;
+            left: 217px;
+            top: 175px;
+        }
+        #summer>#su2{
+            z-index: 2;
+            left: 242px;
+            top: 225px;
+        }
+        #summer>#su3{
+            z-index: 1;
+            left: 268px;
+            top: 275px;
+        }
+        #autumn>#at1{
+            z-index: 1;
+            left: 425px;
+            top: 175px;
+        }
+        #autumn>#at2{
+            z-index: 0;
+            left: 450px;
+            top: 225px;
+        }
+        #autumn>#at3{
+            z-index: 1;
+            left: 476px;
+            top: 275px;
+        }
+        #winter>#wi1{
+            z-index: 2;
+            left: 633px;
+            top: 175px;
+        }
+        #winter>#wi2{
+            z-index: 1;
+            left: 658px;
+            top: 225px;
+        }
+        #winter>#wi3{
+            z-index: 0;
+            left: 684px;
+            top: 275px;
+        }
+    </style>
+</head>
+<body>
+    <h3>실습문제 1번</h3>
+    <hr>
+    <div class="container">
+        <div id="spring">
+            <div id="box" style="background-color: pink;">봄</div>
+            <img src="./그림/sp1.jpg" alt="sp1" id="sp1">
+            <img src="./그림/sp2.jpg" alt="sp2" id="sp2">
+            <img src="./그림/sp3.jpg" alt="sp3" id="sp3">
+        </div>
+        <div id="summer">
+                <div id="box" style="background-color: skyblue;">여름</div>
+                <img src="./그림/su1.jpg" alt="su1" id="su1">
+                <img src="./그림/su2.jpg" alt="su2" id="su2">
+                <img src="./그림/su3.jpg" alt="su3" id="su3">
+        </div>
+        <div id="autumn" style="background-color: brown;">
+                <div id="box">가을</div>
+                <img src="./그림/at1.jpg" alt="at1" id="at1">
+                <img src="./그림/at2.jpg" alt="at2" id="at2">
+                <img src="./그림/at3.jpg" alt="at3" id="at3">
+        </div>
+        <div id="winter">
+                <div id="box">겨울</div>
+                <img src="./그림/wi1.jpg" alt="wi1" id="wi1">
+                <img src="./그림/wi2.jpg" alt="wi2" id="wi2">
+                <img src="./그림/wi3.jpg" alt="wi3" id="wi3">
+        </div>
+    </div>
+</body>
+</html>

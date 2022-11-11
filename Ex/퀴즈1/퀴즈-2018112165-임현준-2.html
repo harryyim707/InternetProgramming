@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>퀴즈-2018112165-임현준-2</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>카드 정보 입력</legend>
+            <ol>
+                <li>
+                    <label for="card-com">카드 회사 <select id="card-com">
+                        <option value="Woori BC">Woori BC</option>
+                        <option value="Samsung" selected>Samsung</option>
+                        <option value="Shinhan">Shinhan</option>
+                        <option value="KB Card">KB card-com</option>
+                    </select></label>
+                </li>
+                <li>
+                    <label for="1">카드 타입 <label for="1"><input type="radio" id="1" name="type">VISA </label><label for="2"><input type="radio" id="2" name="type">Mastercard</label></label>
+                </li>
+                <li>
+                    <label for="cardnum-1">카드 번호 <input type="number" id="cardnum-1"> - <input type="number"> - <input type="number"> - <input type="number"></label>
+                </li>
+                <li>
+                    <label for="crc">CRC 번호 <input type="number" id="crc"></label>
+                </li>
+                <li>
+                    <label for="name">카드 소유자 이름 <input type="text" placeholder="카드 상의 이름" id="name"></label>
+                </li>
+                <li>
+                    <label for="exp">카드 유효기간 <input type="month" id="exp"></label>
+                </li>
+            </ol>
+        </fieldset>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

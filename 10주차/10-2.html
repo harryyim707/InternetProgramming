@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>10주차문제2</title>
+    <style>
+        .container>#notice{
+            border: 2px solid #953133;
+        }
+        #notice>p{
+            background-color: #D26A1F; text-align: center; 
+            font-size: 20px; font-weight: bold;
+        }
+        #notice>hr{
+            background-color: #BC8E8E;
+            border: 3px solid #BC8E8E;
+        }
+        #notice>ul{
+            background-color: #FAECD6;
+        }
+        #notice li{
+            list-style-type: none;
+            margin-bottom: 1em;
+        }
+        #notice span{
+            font-size: 30px;
+            color: #1D7610;
+            margin-right: 1em;
+        }
+        #rating{
+            background-color: #FBEDD9;
+        }
+        #rating>li{
+            margin-bottom: 5px;
+        }
+        #l1{
+            background-color: #FEE4C3;
+            list-style-image: url("그림/wi1_s.jpg");
+        }
+        #l2{
+            background-color: #FEE4C3;
+            list-style-image: url("그림/wi2_s.jpg");
+        }
+        #l3{
+            background-color: #FEE4C3;
+            list-style-image: url("그림/wi3_s.jpg");
+        }
+        #l4{
+            background-color: #FEE4C3;
+            list-style-image: url("그림/wi4_s.jpg");
+        }
+        #sign_in>form{
+            display: inline-block;
+        }
+        input[type=text]:focus{
+            border: 10px dotted white;
+            background-color: #006500;
+            color: #99FB1F;
+        }
+        p#name{
+            margin-left: 70px;
+        }
+        p#email{
+            margin-left: 62px;
+        }
+        p#self{
+            margin-left: 43px;
+        }
+        p#submit{
+            margin-left: 104px;
+        }
+        form>p{
+            margin-bottom: 30px;
+        }
+        form input, form textarea{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>실습문제 2번</h3>
+    <hr>
+    <div class="container">
+        <div id="notice">
+            <p>*웹사이트 이용 수칙</p>
+            <hr>
+            <ul>
+                <li><span>1.</span>도배는 절대절대 금물입니다.</li>
+                <li><span>2.</span>외부 홍보 관련 게시물은 작성해서는 안됩니다.</li>
+                <li><span>3.</span>바르고 고운말만 사용하여 이용자들간 불화가 없도록 합시다.</li>
+                <li><span>4.</span>열심히 활동한 회원은 쉽게 등업할 수 있습니다.</li>
+            </ul>
+        </div>
+        <ul id="rating">
+            <li id="l1">초기회원</li>
+            <li id="l2">열심회원</li>
+            <li id="l3">고수회원</li>
+            <li id="l4">왕 회원</li>
+        </ul>
+        <div id="sign_in">
+            <form>
+                <p id="name"><label>이름 <input type="text" name="inputname" id="name" placeholder="이름입력"><br></label></p>
+                <p id="email"><label>Email <input type="email" name="inputemail" id="email" placeholder="abc@inter.net"><br></label></p>
+                <p id="self"><label>자기소개 <textarea name="self" id="self" cols="15s" rows="2" placeholder="자기소개를 적어주세요!"></textarea><br></label></p>
+                <p id="submit"><input type="submit" value="submit"></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

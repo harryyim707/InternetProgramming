@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Josefin+Sans:wght@500&family=Play:wght@400;700&family=Reem+Kufi+Fun&display=swap');
+/* generals */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #c8d6e5;
+}
+a{
+    text-decoration: none;
+    color: inherit
+}
+/*site header*/
+header{
+    background-color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+.navbar_logo{
+    font-family: Concert One;
+    font-size: 24px;
+
+}
+.navbar_logo i{
+    color: #d49466;
+}
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-family: Play;
+}
+.navbar_menu li{
+    padding: 8px 12px;
+}
+.navbar_menu li:hover>a{
+    opacity:1;
+    border-bottom:2px solid #545454;
+}
+
+#headercolor{
+    position: fixed;
+    width: 100%;
+    height: 105px;
+    background-color: #f9f9f9;
+}
+/* main */
+#menu-selected{
+    font-family: 'Play', sans-serif;
+    font-size: 60px;
+    padding: 5%;
+    border-bottom: 1px solid #8395a7;
+}
+main{
+    display: block;
+    color: #2d3436;
+}
+
+/* footer */
+.footer{
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    color: #545454;
+}

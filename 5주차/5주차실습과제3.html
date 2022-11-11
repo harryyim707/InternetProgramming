@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>문제 3</title>
+</head>
+<body>
+    <h2>강의 사이트 회원가입</h2>
+    <hr>
+    <form>
+        ID: <input type="text" size="15" placeholder="ID를 입력하세요." style="color: gray;"><br>
+        PW: <input type="password" size="15" placeholder="PW를 입력하세요." style="color: gray;"><br>
+        profile: <textarea name="profile" id="pr" cols="30" rows="10" style="padding-top: 1%;">profile 내용 기입</textarea><br>
+        성별: <input type="text" list="sex">
+        <datalist id="sex">
+            <option value="남성"></option>
+            <option value="여성"></option>
+        </datalist>
+    </form>
+    <hr>
+    <h2>관심분야</h2>
+    <form>
+        CSE <input type="checkbox" checked>
+        ENG <input type="checkbox">
+        Research <input type="checkbox">
+    </form>
+    <hr>
+    <form>
+        <h2>지원 강의</h2>
+        <input type="radio">React <img src="./react.jpeg" alt="React" width="500" height="300"><br>
+        <input type="radio" checked>JSP <img src="./jsp.png" alt="JSP" width="500" height="300"><br>
+        <input type="radio">Spring <img src="./spring.png" alt="Spring" width="500" height="300"><br>
+        <hr>
+    </form>
+    <form>
+        <input type="submit" value="제출하기">
+        <input type="reset" value="초기화하기">
+    </form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Ch3</title>
+    <style>
+        html, body{margin: 0;padding: 0;height: 100%;}
+        header{width: 100%;height: 15%;background: yellow;}
+        nav{width: 15%;height: 70%;float: left;background: orange;}
+        section{width: 70%;height: 70%;float: left;background: olivedrab;}
+        aside{width: 15%;height: 70%;float: left;background: orange;}
+        footer{width: 100%;height: 15%;clear: both;background: plum;}
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <section>section</section>
+    <aside>aside</aside>
+    <footer>footer</footer>
+    <figure id="1-1">
+        <figcaption>그림 제목</figcaption>
+        <code>function f(){alert("함수입니다.");}</code>
+        <img src="./Ex/images/btn_gallery.gif" alt="btn">
+    </figure>
+    <details>
+        <summary>Web</summary>
+        <p>HTML5, CSS, Javascript</p>
+    </details>
+    <p>
+        하이라이트 <mark>MARK</mark>
+        시간 <time>19:00</time>
+        미터 게이지 <meter value="0.8" max="1"></meter>
+        진행도 <progress value="2" max="10"></progress>
+    </p> 
+    <form> <!-- action: 웹 서버 응용프로그램 method: get/post -->
+        <fieldset>
+            <legend>기본 입력 및 버튼</legend>
+            텍스트 입력: <input type="text" name="ti" id="ti" placeholder="input:text"><br>
+            비밀번호 입력: <input type="password" name="pi" id="pi" placeholder="input:password"><br>
+            단순 버튼: <input type="button" value="input:button"> <button>button</button><br>
+            전송 버튼: <input type="submit" value="input:submit"> <button type="submit">button:submit</button><br>
+            초기화 버튼: <input type="reset" value="input:reset"> <button type="reset">button:reset</button><br>
+            이미지 버튼: <input type="image" src="./Ex/images/login.gif" alt="input:image"> <button><img src="./Ex/images/btn_gallery.gif" alt="button>img"></button><br>
+            체크박스: <input type="checkbox" name="cbi" id="c1">Check1 <input type="checkbox" name="cbi" id="c2">Check2<br>
+            라디오 버튼: <input type="radio" name="ri" id="r1">Radio1 <input type="radio" name="ri" id="r2">Radio2<br>
+        </fieldset>
+        <fieldset>
+            <legend>선택</legend>
+            Select: <select name="select" id="select">
+                <option value="1" selected>Opt1</option>
+                <option value="2">Opt2</option>
+                <option value="3">Opt3</option>
+            </select><br>
+            Datalist: <input type="text" name="datalist" id="datalist" list="list">
+            <datalist id="list">
+                <option value="Opt1"></option>
+                <option value="Opt2"></option>
+                <option value="Opt3"></option>
+            </datalist><br>
+        </fieldset>
+        <fieldset>
+            <legend>label로 그룹화</legend>
+            label 사용: <label><input type="text" id="i1" placeholder="label"></label> <label for="i2"><input type="text" id="i2" placeholder="label for"></label><br>
+            <label>label 사용한 checkbox:
+                <label for="lc1"><input type="checkbox" id="lc1">Check1</label>
+                <label for="lc2"><input type="checkbox" id="lc2">Check2</label>
+            </label><br>
+            <label>label 사용한 radio:
+                <label for="lr1"><input type="radio" name="lr" id="lr1">Radio1</label>
+                <label for="lr2"><input type="radio" name="lr" id="lr2">Radio2</label>
+            </label><br>
+        </fieldset>
+        <fieldset>
+            <legend>날짜 및 숫자 입력</legend>
+            <label>YYYY년-MM월: <input type="month" name="month" id="month"></label><br>
+            <label>YYYY년-W번째주: <input type="week" name="week" id="week"></label><br>
+            <label>YYYY년-MM월-DD일: <input type="date" name="date" id="date"></label><br>
+            <label>YYYY년-MM월-DD일THH:MM:SS.mS: <input type="datetime-local" name="datetime-local" id="datetime-local"></label><br>
+            <label>HH:MM: <input type="time" name="time" id="time"></label><br>
+            <label>숫자 입력: <input type="number" name="num" id="num" min="0" max="100" step="1" value="10"></label><br>
+            <label>
+                슬라이드바: <input type="range" min="0" max="100" list="marks">
+                <datalist id="marks">
+                    <option value="10" label="Low"></option>
+                    <option value="50" label="Mid"></option>
+                    <option value="90" label="High"></option>
+                </datalist>
+            </label><br>
+        </fieldset>
+        <fieldset>
+            <legend>특수 입력</legend>
+            <label>색상 선택: <input type="color" name="color" id="color" value="#FFAABB"></label><br>
+            <label>이메일 입력: <input type="email" name="email" id="email" placeholder="input:email"></label><br>
+            <label>url 입력: <input type="url" name="url" id="url" placeholder="input:url"></label><br>
+            <label>전화번호 입력: <input type="tel" name="tel" id="tel" placeholder="input:tel"></label><br>
+            <label>검색: <input type="search" name="search" id="search" placeholder="input:search"></label><br>
+            <label>파일 선택: <input type="file" name="file" id="file"></label><br>
+            <label>여러 줄의 텍스트 입력: <textarea name="ta" id="ta" cols="30" rows="10" placeholder="textarea"></textarea></label>
+        </fieldset>
+    </form>
+</body>
+</html>

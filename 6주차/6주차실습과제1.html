@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>6주차실습과제1</title>
+</head>
+<body>
+    <hr>
+    <h3>반티 제작하기</h3>
+    <hr>
+    <form>
+        <label for="email">이메일 <input type="email" id="email"></label><br>
+        <label for="num">제작개수<small>(최소 20명)</small> <input type="number" min="20" max="50" step="1" id="num" value="20"></label>
+    </form>
+    <hr>
+    <form>
+        <label for="clr">선호색상 <input type="color" value="#F0F0FF" id="clr"></label><br>
+        <label for="ship-date">희망 배송일자 <input type="date" id="ship-date"></label><br>
+        <label for="clothes-size">
+            옷사이즈 <small>(XS, S, M, L, XL)</small> <input type="range" min="85" max="105" list="size" id="clothes-size">
+            <datalist id="size">
+                <option value="85"></option>
+                <option value="90"></option>
+                <option value="95"></option>
+                <option value="100"></option>
+                <option value="105"></option>
+            </datalist>
+        </label>
+    </form>
+</body>
+</html>
