@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>11주차실습2</title>
+    <style>
+        img{
+            width: 200px; height: 200px;
+        }
+        span{
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function change(obj){
+            obj.src="./ddung.jpg"
+        }
+    </script>
+    <script>
+        let ret = confirm("시작할까요?");
+        if(ret == true){
+            let name = prompt("당신의 이름은 무엇인가요?");
+            if(name == null){
+                document.write(`<img src="./que.png" alt="que"><br>
+                시작하였습니다!<br>
+                취소를 누르셨군요..`);
+            }
+            else if(name==""){
+                document.write(`<img src="./que.png" alt="que"><br>
+                시작하였습니다!<br>
+                아무것도 입력하지 않았습니다.`);
+            }
+            else{
+                document.writeln(`<img src="./que.png" alt="que" onmouseover="change(this)" onclick="javascript:alert('사랑해요~')"><br>
+                시작하였습니다!<br>
+                당신의 이름은<br>
+                <span><mark>[${name}]</mark></span><br>
+                로군요!`);
+            }
+        }
+        else{
+            document.writeln('<img src="./que.png" alt="que"><br>');
+            document.writeln("시작하지 않았습니다!");
+        }
+    </script>
+</body>
+</html>

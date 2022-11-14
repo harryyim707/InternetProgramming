@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>11주차실습3</title>
+    <style>
+        p#literal, p#sp{
+            text-align: center;
+        }
+        span#sp{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let inp = prompt("수식 입력:");
+        const res = eval(inp);
+        </script>
+    <script>
+        function changeColor(color){
+            document.body.style.color=color;
+            document.getElementById("na").style.color="black";
+        }
+    </script>
+    <hr>
+    <h2>문자열 리터럴을 이용한 색깔 변경</h2>
+    <hr>
+    <p onmouseover="changeColor('red')" onmouseout="changeColor('black')">빨강색으로 변경</p>
+    <p onmouseover="changeColor('blue')" onmouseout="changeColor('black')">파랑색으로 변경</p>
+    <p onmouseover="changeColor('green')" onmouseout="changeColor('black')">초록색으로 변경</p>
+    <hr>
+    <h2>리터럴</h2>
+    <hr>
+    <script>
+        const res2 = 15+0xc5;
+        const res3 = 0xf3-0o77;
+        const res4= 10571E-3;
+        const res5 = res2+res3+res4;
+        const res6 = res5+NaN;
+        let res7 = NaN-NaN;
+        let res8 = false;
+
+        document.write(`<p id="literal">
+        입력한 수식의 결과: ${res} <br>
+        15 + 0xc5 = <b>${res2}</b> 입니다!<br>
+        0xf3 - 0o77 = <ins>${res3}</ins> 입니다!<br>
+        0xf3 - 0o77 = <ins>${res4}</ins> 입니다!<br>
+        위 세개 결과값을 더한 값은 "<ins>${res5}</ins>" 입니다!<br>
+        위 결과값과 NaN을 더한 값은 "<ins>${res6}</ins>" 입니다!<br>
+        NaN에서 NaN을 빼면? : <i>${res7}</i>입니다. <br>
+        bool 변수에 담겨 있는 값은 <mark>${res8}</mark> 입니다!<br>
+        </p>
+
+        <p id="sp"><br><span id="sp"><b><i>인생은 "한방"이야!</i></b></span></p>
+        `);
+    </script>
+</body>
+</html>
