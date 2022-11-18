@@ -62,11 +62,12 @@ main{
 
 /* footer */
 .footer{
-    position: static;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 15px 0;
     text-align: center;
     color: #545454;
+    background-color: white;
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Q3</title>
+</head>
+<body>
+    <script>
+        let id = "HappySSong";
+        let pw = "1234567";
+        let user_id = prompt("아이디는?");
+
+        if(checkID(user_id)){
+            let user_pw = prompt("비밀번호는?");
+            if(checkPW(user_pw)) document.write(user_id+"님 반갑습니다!");
+            else alert("비밀번호가 일치하지 않습니다.");
+        }
+        else{
+            alert("아이디가 일치하지 않습니다.");
+        }
+
+        function checkID(uid){
+            if(uid == id) return true;
+            else return false;
+        }
+
+        function checkPW(upw){
+            if(upw == pw) return true;
+            else return false;
+        }
+    </script>
+</body>
+</html>

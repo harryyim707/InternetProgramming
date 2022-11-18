@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Q1</title>
+</head>
+<body>
+    <script>
+        let height = parseInt(prompt("당신의 신장은?","0"));
+        if(isNaN(height)) document.write("입력 오류 입니다.");
+        else{
+            let weight = (height-100)*0.9;
+            document.write(height+"의 표준 몸무게는 "+weight+" 입니다.");
+        }
+    </script>
+</body>
+</html>
