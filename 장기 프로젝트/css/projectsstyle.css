@@ -3,6 +3,13 @@ nav {
     height: 10%;
 }
 
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* navigation bar */
 nav>div{
     display: inline-block;
@@ -44,4 +51,55 @@ nav li:hover>a{
 section {
     border-left: 2px solid #8395a7;
     padding-left: 3%;
+    padding-right: 3%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    width: 100px;
+}
+
+thead{
+    background-color: #8395a7;
+    color: #ff9f43;
+}
+td{
+    border-bottom: 1px solid #8395a7;
+}
+tbody tr:nth-child(even){
+    background-color: white;
+}
+
+p, ul{
+    font-family: 'MonoplexKR-Regular';
+}
+
+
+pre{
+    background-color: #23252f;
+    color: #e4e4ea;
+    font-size: 15.4px;
+    line-height: 1.5;
+    font-family: 'D2Coding', monospace;
+    margin-bottom: 1.1rem;
+    border-radius: 0 0 5px 5px;
+    margin-top: 0;
+    overflow: auto;
+}
+#file_name{
+    font-family: 'D2Coding', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    padding: 0.3rem 15px;
+    font-size: 14px;
+    background: #282936;
+    color: #f5bd15;
 }

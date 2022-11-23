@@ -5,6 +5,39 @@
     <title>12주차문제1</title>
 </head>
 <body>
-    
+    <script>
+        while(1){
+            let a = parseInt(prompt("첫 번째 수: "));
+            let b = parseInt(prompt("두 번째 수: "));
+            let operator = prompt("연산자: ");
+            let res;
+
+            if(isNaN(a) || isNaN(b)){
+                alert("입력값 중 숫자가 아닌 수가 있습니다.");
+                break;
+            }
+
+            if(operator == "+"){
+                res=a+b;
+                alert("두 수의 덧셈: "+res);
+            }
+            else if(operator == "-"){
+                res = a-b;
+                alert("두 수의 뺄셈: "+res);
+            }
+            else if(operator == "*"){
+                res = a*b;
+                alert("두 수의 곱셈: "+res);
+            }
+            else if(operator == "/"){
+                res = a/b;
+                alert("두 수의 나눗셈: "+res);
+            }
+            else if(operator == "%"){
+                res = a%b;
+                alert("두 수의 나머지: "+res);
+            }
+        }
+    </script>
 </body>
 </html>

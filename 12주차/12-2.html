@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>12주차문제2</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("별의 높이 입력: "));
+        let k = prompt("별 모양 정하기.\n1. 기본 2. 역순");
+        switch(k){
+            case "1":
+                starPrintDefault(n);
+                break;
+            case "2":
+                starPrintReverse(n);
+                break;
+        }
+
+        function starPrintDefault(x){
+            alert("기본 별찍기를 선택하였습니다..!");
+            document.write("<h1>기본 별찍기</h1>");
+            document.write("<h3>높이: "+x+"</h3><hr>");
+            for(let i=1; i<=x; i++){
+                for(let j=0;j<i;j++){
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+
+        function starPrintReverse(x){
+            alert("역순 별찍기를 선택하였습니다..!");
+            document.write("<h1>역순 별찍기</h1>");
+            document.write("<h3>높이: "+x+"</h3><hr>");
+            for(let i=0; i<x; i++){
+                for(let j = x; j>i;j--){
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+</html>

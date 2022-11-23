@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>12주차문제3</title>
+    <style>
+        img{
+            border: 2px solid red;
+        }
+        p{
+            width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let day = prompt("월화수목금토일 중 하나를 입력하시오..!!");
+        let segment;
+        let n = 1;
+
+        switch(day){
+            case "월":
+            case "화":
+            case "수":
+            case "목":
+            case "금":
+                document.write(`${day}요일은 출근입니다..<br>`);
+                segment = 0;
+                break;
+            case "토":
+            case "일":
+                document.write(`${day}요일은 휴일입니다!!<br>`);
+                segment = 1;
+                break;
+        }
+        if(segment == 1 || segment==0){
+            document.write(`<p><img src="./questionmark.png" alt="image" id="image" 
+            onmouseover="changeImage(segment)" onclick="n=imageScaler(n)"/></p>`);
+        }
+
+        function changeImage(seg){
+            let elem = document.getElementById("image");
+            if(seg == 0){
+                elem.src = './images.png';
+            }
+            else{
+                elem.src = './images2.jpg';
+            }
+        }
+
+        function imageScaler(x){
+            let elem = document.getElementById("image");
+            x += 1
+            elem.style= "transform: scale("+x+",1)";
+
+            return x;
+        }
+    </script>
+</body>
+</html>
