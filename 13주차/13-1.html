@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>13주차문제1</title>
+</head>
+<body>
+    <script>
+        let week = ["일", "월", "화", "수", "목", "금", "토"];
+        let today = new Date();
+        let day = today.getDay();
+
+        document.write("<h3>평일: Aqua, 주말: gold</h3><hr>");
+        document.write(`<p>오늘은 ${today.getDate()}일, ${week[day]}요일 입니다!</p>`);
+    
+        if(day>0 && day<6){
+            document.body.style.backgroundColor='aqua';
+        }
+        else{
+            document.body.style.backgroundColor='gold';
+        }
+    </script>
+</body>
+</html>

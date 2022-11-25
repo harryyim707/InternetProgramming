@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>13주차문제3</title>
+</head>
+<body>
+    <script>
+        function Square(name){
+            this.name = name;
+            this.width = Math.floor(Math.random()*91)+10;
+            this.height = Math.floor(Math.random()*91)+10;
+            this.price = 100000;
+
+            this.area = function(){
+                return this.width*this.height;
+            }
+
+            this.fix = function(){
+                this.width += 5;
+                this.height += 5;
+                this.price -= 8000;
+            }
+        }
+
+        document.write("<h3>square 객체 만들기</h3><hr>")
+        let square_1 = new Square('square1');
+        let square_2 = new Square('square2');
+
+        document.write(`<p>${square_1.name}: 가로: ${square_1.width}cm, 세로: ${square_1.height}cm, 자금: ${square_1.price}원<br>`);
+        document.write(`${square_2.name}: 가로: ${square_2.width}cm, 세로: ${square_2.height}cm, 자금: ${square_2.price}원<br></p>`);
+
+        let smaller = square_1.area()>square_2.area()? square_2 : square_1;
+        let bigger = square_1.area()<square_2.area()? square_2 : square_1;
+        
+        let i = 0;
+
+        document.write('<p>');
+        while(smaller.area() < bigger.area()){
+            document.write(`${smaller.name}의 넓이가 ${bigger.name}의 넓이보다 작아 수리를 진행합니다. <br>`);
+            smaller.fix();
+            i++;
+        }
+        document.write('</p>');
+
+        document.write(`<p>[${smaller.name} 최종 결과]</p>`);
+
+        document.write(`<p>
+            수리를 종료합니다.<br>
+            ${i}번 수리를 진행하였습니다.<br>
+            가로: ${smaller.width}cm, 세로: ${smaller.height}cm, 자금: ${smaller.price}원<br>
+            넓이: ${smaller.area()}
+            </p>`);
+
+    </script>
+</body>
+</html>

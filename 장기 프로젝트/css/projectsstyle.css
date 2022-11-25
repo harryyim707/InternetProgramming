@@ -4,9 +4,9 @@ nav {
 }
 
 @font-face {
-    font-family: 'MonoplexKR-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -76,8 +76,8 @@ tbody tr:nth-child(even){
     background-color: white;
 }
 
-p, ul{
-    font-family: 'MonoplexKR-Regular';
+body{
+    font-family: 'LeferiBaseType-RegularA';
 }
 
 
@@ -102,4 +102,7 @@ pre{
     font-size: 14px;
     background: #282936;
     color: #f5bd15;
+}
+#content{
+    margin-bottom: 100px;
 }

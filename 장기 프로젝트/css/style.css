@@ -1,5 +1,11 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Josefin+Sans:wght@500&family=Play:wght@400;700&family=Reem+Kufi+Fun&display=swap');
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* generals */
 body{
     padding: 0;
@@ -60,12 +66,34 @@ main{
     color: #2d3436;
 }
 
+.contents_preview{
+    display: inline-block;
+    margin: 3%;
+    border: 2px solid #FFF5E4;
+    background-color: #FFD1D1;
+    border-radius: 5px 5px;
+    box-shadow: 2px 2px #b5aea1;
+    font-family: 'LeferiBaseType-RegularA';
+    /* float: left; */
+}
+#projects_preview{
+    width: 40%;
+    display: inline-block;
+}
+#preview_header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: 2px solid #6c6c6c;
+}
+
 /* footer */
 .footer{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 20px;
     padding: 15px 0;
     text-align: center;
     color: #545454;
