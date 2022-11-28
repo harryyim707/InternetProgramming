@@ -65,28 +65,54 @@ main{
     display: block;
     color: #2d3436;
 }
+p{
+    font-family: 'LeferiBaseType-RegularA';
+}
 
 .contents_preview{
     display: inline-block;
     margin: 3%;
     border: 2px solid #FFF5E4;
-    background-color: #FFD1D1;
-    border-radius: 5px 5px;
-    box-shadow: 2px 2px #b5aea1;
+    background: rgba(255, 227, 225, .7);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #545454;
     font-family: 'LeferiBaseType-RegularA';
     /* float: left; */
 }
 #projects_preview{
-    width: 40%;
     display: inline-block;
 }
 #preview_header{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    border-bottom: 2px solid #6c6c6c;
 }
-
+.about_preview{
+    margin: 3%;
+    border: 2px solid #FFF5E4;
+    background: rgba(255, 227, 225, .7);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #545454;
+    font-family: 'LeferiBaseType-RegularA';
+}
+#About{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.contacts_preview{
+    margin: 3%;
+    border: 2px solid #FFF5E4;
+    background: rgba(255, 227, 225, .7);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #545454;
+    font-family: 'LeferiBaseType-RegularA';
+}
+#Contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
 /* footer */
 .footer{
     position: fixed;

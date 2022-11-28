@@ -4,7 +4,36 @@
     display: flex;
     min-width: 10%;
 }
+.Info{
+    margin: 2%;
+}
+#name{
+    border-bottom: 3px solid #545454;
+    margin-bottom: 2%;
+}
+#edu, #work-ex, #skills{
+    padding: 1%;
+    background: rgba(255, 227, 225, .7);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #545454;
+    margin-bottom: 2%;
+}
+#work-ex h3{
+    background-color: #B2A4FF;
+    border-radius: 10px;
+    border: 3px solid #FFB4B4;
+}
+#con{
+    background-color: #FFF5E4;
+    border-radius: 10px;
+    border: 10px dashed #feca57;
+}
 
+#skills li{
+    list-style-type: none;
+    font-size: large;
+    margin-bottom: 2%;
+}
 #git,
 #notion {
     font-size: 25px;

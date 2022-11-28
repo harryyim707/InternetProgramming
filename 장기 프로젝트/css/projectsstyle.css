@@ -92,6 +92,9 @@ pre{
     margin-top: 0;
     overflow: auto;
 }
+.github{
+    color: #8395a7
+}
 #file_name{
     font-family: 'D2Coding', monospace;
     display: flex;
