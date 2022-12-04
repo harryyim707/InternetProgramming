@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        span{
+            display: inline-block;
+            text-align: center;
+            line-height: 80px;
+            background-color: slategray;
+            color: yellow;
+            font-size: 60px;
+            width: 40px;
+        }
+        p#ans{
+            color: darkred;
+        }
+    </style>
+    <title>14주차문제3</title>
+</head>
+<body>
+    <script>
+        function changeNo(elem){
+            let ran = Math.floor(Math.random()*3);
+            elem.innerText = ran;
+            if(elem.id == 'third'){
+                let first = document.getElementById('first');
+                let second = document.getElementById('second');
+                if(first.innerText == elem.innerText && second.innerText == elem.innerText){
+                    document.getElementById("ans").innerText = "성공입니다!!";
+                }
+                else{
+                    document.getElementById("ans").innerText = "실패입니다..";
+                }
+            }
+        }
+    </script>
+    <h3>겜블링 게임</h3>
+    <hr>
+    <p>
+        <span id="first" onclick="changeNo(this)">0</span>
+        <span id="second" onclick="changeNo(this)">0</span>
+        <span id="third" onclick="changeNo(this)">0</span>
+    </p>
+    <p id="ans"></p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>14주차문제2</title>
+</head>
+
+<body>
+    <script>
+        let n = 0;
+        function changeBor(){
+            let span = document.getElementById("mySpan");
+            if(n%2 == 0){
+                span.style.border='2px dotted aqua';
+                n+=1;
+            }
+            else{
+                span.style.border='0px dotted aqua';
+                n+=1;
+            }
+            
+        }
+        function cnt(elem){
+            let elems = document.getElementsByTagName(elem);
+            alert(`<${elem}>태그의 개수는 ${elems.length}`);
+        }
+
+        let initial = 16;
+
+        function expand(){
+            let element = document.getElementsByClassName("sen");
+            initial += 2;
+            for(let i = 0; i<element.length; i++){
+                element[i].style.fontSize = initial+"px"
+            }
+        }
+    </script>
+    <b>자바스크립트란?</b>
+    <button id="borchange" onclick="changeBor()">border</button>
+    <button id="pcnt" onclick="cnt('p')">p</button>
+    <button id="hrcnt" onclick="cnt('hr')">hr</button>
+    <button id="expand" onclick="expand()">확대</button><br>
+    <hr>
+    <p class="sen">자바 스크립트는 웹 프로그래밍 언어로서 웹 페이지를 동적 변경시킬 수 있다.</p>
+    <p class="sen"><span id="mySpan">C언어</span>를 아는 사용자는 빠르게 학습할 수 있다.</p>
+    <p class="sen">이벤트 등 GUI프로그래밍에 필요한 요소들이 있어 학습에 약간의 어려움이 있다.</p>
+    <hr>
+</body>
+
+</html>
